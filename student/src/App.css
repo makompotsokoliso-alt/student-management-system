@@ -1,0 +1,139 @@
+body {
+  background-color: #719997;
+  color: #222222;
+}
+  
+
+.app-container,
+.dashboard {
+  text-align: left ;
+}
+
+.header,
+.header h1,
+.description,
+.dashboard h2,
+.total-students {
+  text-align: left;
+}
+
+
+
+.toolbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center ;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+  margin-left: 0 ;
+}
+
+.search-box {
+  width: 270px;
+  max-width: 100% ;
+  margin: 0;
+  
+}
+
+.add-button {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #9db4ce;
+  border-radius: 5px;
+  background: rgb(110, 128, 131);
+}
+
+.student-table {
+  width: 100% ;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #9db4ce;
+  background: rgb(110, 128, 131) ;
+}
+
+
+
+.student-table th {
+  padding: 12px 10px;
+  border: 1px solid #6f8fb5 ;
+  text-align: left ;
+  color: white ;
+}
+
+.student-table td {
+  padding: 12px 10px ;
+  border: 1px solid #a9bfd8 ;
+  text-align: left ;
+  vertical-align: middle ;
+}
+
+
+.edit-button {
+  background-color: #0ca506;
+  color: rgb(209, 179, 179) ;
+}
+
+.delete-button {
+  background-color: #dc3545 ;
+  color: white ;
+}
+
+
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .student-table {
+    min-width: 850px;
+  }
+}
+
+
+.table-container table {
+  width: 100% ;
+  border-collapse: collapse ;
+  border-spacing: 0 ;
+  border: 2px solid #194d91 ;
+}
+
+
+.table-container table th {
+  border: 2px solid #194d91 ;
+  padding: 12px ;
+  background-color:  rgb(110, 128, 131);
+  color: white ;
+  text-align: left ;
+}
+
+
+.table-container table td {
+  border: 2px solid #194d91 ;
+  padding: 12px ;
+  text-align: left ;
+  vertical-align: middle ;
+}
+
+
+.table-container table tbody tr:nth-child(odd) td {
+  background-color:  rgb(110, 128, 131) ;
+}
+
+.table-container table tbody tr:nth-child(even) td {
+  background-color:  rgb(110, 128, 131) ;
+}
+
+
+@media (max-width: 768px) {
+  .table-container table {
+    min-width: 950px ;
+  }
+}
